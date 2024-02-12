@@ -27,6 +27,8 @@ export class Producer {
       routingKey,
       Buffer.from(JSON.stringify(logDetails))
     );
-    console.log(`The message ${message} was sent to exchange ${exchangeName}`);
+    console.log(
+      `The new ${routingKey} was sent to the exchange ${exchangeName}`
+    );
   }
 }
